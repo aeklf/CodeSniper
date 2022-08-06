@@ -1,0 +1,19 @@
+{
+  "name": "code-snipper",
+  "version": "1.0.0",
+  "description": "Social media for sharing code snippets",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeklf/ThirdProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeklf/ThirdProject/issues"
+  },
+  "homepage": "https://github.com/aeklf/ThirdProject#readme"
+}
