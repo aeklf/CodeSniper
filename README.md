@@ -1,4 +1,4 @@
-# ThirdProject (Social media platform)
+# ThirdProject (Social media platform) (CodeSnipper),(CodeSnippetter)
 
 * Requirements:
   * MERN stack:
@@ -56,3 +56,23 @@
 * Finish: Ago 17
 * front end finish: Ago 15
 * Start full: Ago 8
+
+
+# Initial phase (minimal requirements for sarting):
+
+(Mario, Caro)
+* Front: Landing page
+  * Title and theme
+  * Input for username
+  * Input for pasword
+  * Log in buttong
+  * Sign up button
+
+(Cuitla, Dani)
+* Back:
+  * User DB
+  * User models
+  * Main routes (log in, sign up)
+
+* General:
+  * Folder structure
