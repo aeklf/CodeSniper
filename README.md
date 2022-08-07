@@ -74,5 +74,8 @@
   * User models
   * Main routes (log in, sign up)
 
+    * Next:
+      * Post model (tweet, snippet)
+
 * General:
   * Folder structure
