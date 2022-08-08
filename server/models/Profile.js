@@ -7,6 +7,11 @@ const profileSchema = new Schema({
     unique: true,
     trim: true,
   },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
 });
 
 const Profile = model('Profile', profileSchema);

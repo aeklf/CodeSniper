@@ -1,0 +1,12 @@
+[
+    {
+        "title" : "First snipet",
+        "subject" : "React",
+        "content" : "Brief react snipet"
+    },
+    {
+        "title" : "Second snipet",
+        "subject" : "CSS",
+        "content" : "Brief CSS snipet"
+    }
+]
