@@ -6,13 +6,26 @@ const postSchema = new Schema({
     required: true,
     unique: true,
   },
-  snipet: [
+  title: [
     {
       type: String,
+      required: true,
+    },
+  ],
+  subject: [
+  {
+    type: String,
+    required: true,
+  },
+  ],
+  content: [
+    {
+      type: String,
+      required: true,
     },
   ],
 });
 
-const Profile = model('Post', postSchema);
+const Post = model('Post', postSchema);
 
 module.exports = Post;
