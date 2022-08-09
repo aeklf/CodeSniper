@@ -84,11 +84,11 @@
 
 * Front:
   * Set theme for app
-  * Landing page (Buttons for log in or sign up) today
-  * Sign up page (Username, email, password) wednesday
-  * Login page  (email, password) wednesday
-  * General feed (Search bar: Search by username or topic) {All posts reverse chronological} Sat
-  * Profile page (Profile pic, bio, your posts) Monday
+  * Landing/Login page (Buttons for log in or sign up) today -- Mario 
+  * Sign up page (Username, email, password) wednesday -- Mario
+  * General feed (Search bar: Search by username or topic) {All posts reverse chronological} Sat -- Alexis
+  * Write page -- Caro
+  * Profile page (Profile pic, bio, your posts) Monday -- Andrea
     * Settings page 
 
 * Back:

@@ -17,11 +17,11 @@ function App() {
   const currentUser = true;
   return (
     <Router>
-      {/* <Topbar /> */}
-      <LogInSignUp />
+      <Topbar />
+      {/* <LogInSignUp /> */}
       {/* <LogInSignUp /> */}
 
-      {/* <Switch>
+      <Switch>
         <Route exact path="/">
           <Homepage />
         </Route>
@@ -39,7 +39,7 @@ function App() {
         <Route path="/settings">
           {currentUser ? <Settings /> : <Login />}
         </Route>
-      </Switch> */}
+      </Switch>
     </Router>
   );
 }
