@@ -29,6 +29,8 @@ const typeDefs = gql`
   type Mutation {
     addProfile(username: String!, email:String!, password: String!):Auth
     removeProfile(profileId: ID!): Profile
+    addPost(title: String!, topic: String!, content: String!):Profile
+    removePost(postId: ID!):Profile
     login(email: String!, password: String!):Auth
   }
 `;
