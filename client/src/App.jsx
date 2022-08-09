@@ -17,29 +17,34 @@ function App() {
   const currentUser = true;
   return (
     <Router>
-      {/* <Topbar /> */}
-      <LogInSignUp />
+      <Topbar />
+      {/* <LogInSignUp /> */}
       {/* <LogInSignUp /> */}
 
-      {/* <Switch>
-        <Route exact path="/">
+      <Switch>
+        {/* <Route exact path="/">
           <Homepage />
-        </Route>
+        </Route> */}
+
         <Route path="/posts">
           <Homepage />
         </Route>
+
         <Route path="/register">
           {currentUser ? <Homepage /> : <Register />}
         </Route>
+
         <Route path="/login">{currentUser ? <Homepage /> : <Login />}</Route>
         <Route path="/post/:id">
           <Single />
+
         </Route>
         <Route path="/write">{currentUser ? <Write /> : <Login />}</Route>
         <Route path="/settings">
           {currentUser ? <Settings /> : <Login />}
         </Route>
-      </Switch> */}
+
+      </Switch>
     </Router>
   );
 }
