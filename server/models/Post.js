@@ -12,7 +12,7 @@ const postSchema = new Schema({
       required: true,
     },
   ],
-  subject: [
+  topic: [
   {
     type: String,
     required: true,

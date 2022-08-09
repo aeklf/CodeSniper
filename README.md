@@ -79,3 +79,20 @@
 
 * General:
   * Folder structure
+
+# 08-08
+
+* Front:
+  * Set theme for app
+  * Landing page (Buttons for log in or sign up) today
+  * Sign up page (Username, email, password) wednesday
+  * Login page  (email, password) wednesday
+  * General feed (Search bar: Search by username or topic) {All posts reverse chronological} Sat
+  * Profile page (Profile pic, bio, your posts) Monday
+    * Settings page 
+
+* Back:
+  * Create user database
+  * Create post database
+    * Routes for user CRUD
+    * Routes for post CRUD
