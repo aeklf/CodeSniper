@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 import Topbar from "./components/topbar/Topbar";
 import LogInSignUp from "./components/logInSignUp/LogInSignUp";
-
+import "./App.css";
 import Homepage from "./pages/homepage/Homepage";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
