@@ -96,3 +96,6 @@
   * Create post database
     * Routes for user CRUD
     * Routes for post CRUD
+
+
+For connecting back end with the front end, review unit 21/22. Create apollo provider for the requests. 

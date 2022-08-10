@@ -1,4 +1,7 @@
 import "./register.css";
+import React from "react";
+import { ADD_PROFILE } from '../utils/mutations';
+import { useMutation } from "@apollo/client";
 
 export default function Register() {
   return (
@@ -12,10 +15,10 @@ export default function Register() {
         </div>
         <div className="loginRight">
           <div className="loginBox">
-            <input name="Username" placeholder="Username" className="loginInput" />
-            <input name="Email" placeholder="Email" className="loginInput" />
-            <input name="Password" placeholder="Password" className="loginInput" />
-            <input name="PasswordAgain" className="loginInput" />
+            <input name="username" placeholder="Username" className="loginInput" />
+            <input name="email" placeholder="Email" className="loginInput" />
+            <input name="password" placeholder="Password" className="loginInput" />
+            <input name="passwordAgain" className="loginInput" />
             <button className="loginButton">Sign Up</button>
             <button className="loginRegisterButton">
               Log into Account
