@@ -1,14 +1,24 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 
+//Components 
 import Topbar from "./components/topbar/Topbar";
 import LogInSignUp from "./components/logInSignUp/LogInSignUp";
 
+//Pages
+import "./App.css";
 import Homepage from "./pages/homepage/Homepage";
-import Login from "./pages/login/Login";
-import Register from "./pages/register/Register";
 import Settings from "./pages/settings/Settings";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
+
+//Worng old routes 
+// import Register from "./pages/register/Register";
+// import Login from "./pages/login/Login";
+
+//Proper register/login page
+import Register from "./pages/register/Register";
+import Login from "./pages/login/Login";
+
 
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -17,9 +27,14 @@ function App() {
   const currentUser = true;
   return (
     <Router>
+
+      {/* Components */}
       {/* <Topbar /> */}
-      <LogInSignUp />
-      {/* <LogInSignUp /> */}
+
+
+      <Register />
+      {/* <Login /> */}
+
 
       {/* <Switch>
         <Route exact path="/">
@@ -40,6 +55,8 @@ function App() {
           {currentUser ? <Settings /> : <Login />}
         </Route>
       </Switch> */}
+
+
     </Router>
   );
 }
