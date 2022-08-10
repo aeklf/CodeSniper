@@ -1,19 +1,28 @@
-import "./register.css"
+import "./register.css";
 
 export default function Register() {
-    return (
-        <div className="register">
-      <span className="registerTitle">Register</span>
-      <form className="registerForm">
-        <label>Username</label>
-        <input className="registerInput" type="text" placeholder="Enter your username..." />
-        <label>Email</label>
-        <input className="registerInput" type="text" placeholder="Enter your email..." />
-        <label>Password</label>
-        <input className="registerInput" type="password" placeholder="Enter your password..." />
-        <button className="registerButton">Register</button>
-      </form>
-        <button className="registerLoginButton">Login</button>
+  return (
+    <div className="login">
+      <div className="loginWrapper">
+        <div className="loginLeft">
+          <h3 className="loginLogo">CodeSniper</h3>
+          <span className="loginDesc">
+            CodeSniper is your tool as a software developer to share code to your friends. 
+          </span>
+        </div>
+        <div className="loginRight">
+          <div className="loginBox">
+            <input placeholder="Username" className="loginInput" />
+            <input placeholder="Email" className="loginInput" />
+            <input placeholder="Password" className="loginInput" />
+            <input placeholder="Password Again" className="loginInput" />
+            <button className="loginButton">Sign Up</button>
+            <button className="loginRegisterButton">
+              Log into Account
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    )
+  );
 }
