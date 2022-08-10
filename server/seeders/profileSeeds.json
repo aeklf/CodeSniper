@@ -1,10 +1,26 @@
 [
     {
-        "name" : "Lee Cronin",
-        "email" : "test@email.com"
+        "username" : "Lee Cronin",
+        "email" : "test@email.com",
+        "password" : "psstheword",
+        "userPosts" : [
+            {
+                "title" : "First snipet",
+                "topic" : "React",
+                "content" : "Brief react snipet"
+            }
+        ]
     },
     {
-        "name" : "Lex Fridman",
-        "email" : "test2@email.com"
+        "username" : "Kilgore Trout",
+        "email" : "test2@email.com",
+        "password" : "psstheword",
+        "userPosts" : [
+            {
+                "title" : "First snipet",
+                "topic" : "React",
+                "content" : "Brief react snipet"
+            }
+        ]
     }
 ]
