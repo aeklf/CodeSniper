@@ -21,8 +21,5 @@
   "bugs": {
     "url": "https://github.com/aeklf/ThirdProject/issues"
   },
-  "homepage": "https://github.com/aeklf/ThirdProject#readme",
-  "dependencies": {
-    "concurrently": "^7.3.0"
-  }
+  "homepage": "https://github.com/aeklf/ThirdProject#readme"
 }
