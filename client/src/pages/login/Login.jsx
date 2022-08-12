@@ -1,27 +1,58 @@
 import "./login.css";
+import React, {useState} from "react";
+import {LOGIN_USER} from '../../utils/mutations';
+import { useMutation } from "@apollo/client";
+import Auth from '../../utils/auth';
 
-export default function Login() {
+const LoginForm = () => {
+
+  const [userFormData, setUserFormData] = useState({email: '', password: '' });
+  const [login, {error}] = useMutation(LOGIN_USER);
+
+  const handleInputChange = (event) => {
+    const {name, value} = event.target;
+    setUserFormData({...userFormData, [name]: value});
+  };
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    try {
+      const {data} = await login({
+        variables: userFormData,
+      });
+      Auth.login(data.login.token);
+    }catch (err) {
+      console.error(err);
+    }
+  }
+
   return (
-    <div className="login">
-      <div className="loginWrapper">
-        <div className="loginLeft">
-          <h3 className="loginLogo">CodeSniper</h3>
-          <span className="loginDesc">
+      <div className="login">
+        <div className="loginWrapper">
+          <div className="loginLeft">
+            <h3 className="loginLogo">CodeSniper</h3>
+            <span className="loginDesc">
             Post your code snippets and share them with your friends.
           </span>
-        </div>
-        <div className="loginRight">
-          <div className="loginBox">
-            <input name="Email" placeholder="Email" className="loginInput" />
-            <input name="Password" placeholder="Password" className="loginInput" />
-            <button className="loginButton">Log In</button>
-            <span className="loginForgot">Forgot Password?</span>
-            <button className="loginRegisterButton">
-              Create a New Account
-            </button>
+          </div>
+          <div className="loginRight">
+            <div className="loginBox">
+              <form>
+                <input type="text" name="email" placeholder="Email" className="loginInput" onChange={handleInputChange} value={userFormData.email}/>
+                <input type="password" name="password" placeholder="Password" className="loginInput" onChange={handleInputChange} value={userFormData.password}/>
+                <button type="submit" className="loginButton" onClick={handleFormSubmit}>Log In</button>
+                <span className="loginForgot">Forgot Password?</span>
+                <button className="loginRegisterButton">
+                  Create a New Account
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   );
 }
+
+export default LoginForm;

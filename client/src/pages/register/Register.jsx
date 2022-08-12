@@ -15,7 +15,6 @@ const SignupForm = () => {
   };
 
   const handleFormSubmit = async (event) => {
-    console.log('handleFormSubmit');
     event.preventDefault();
     event.stopPropagation();
 
@@ -27,6 +26,12 @@ const SignupForm = () => {
     }catch (err) {
       console.error(err);
     }
+
+    setUserFormData({
+      username: '',
+      email: '',
+      password: '',
+    });
   }
 
   return (
