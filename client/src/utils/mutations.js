@@ -21,13 +21,25 @@ export const LOGIN_USER = gql`
                 _id
                 username
                 email
-                userPosts {
-                    _id
-                    title
-                    topic
-                    content
-                }
             }
+        }
+    }
+`;
+
+export const WRITE_POST = gql`
+    mutation addPost($title: String!, $topic: String!, $content: String!) {
+        addPost(title: $title, topic: $topic, content: $content) {
+            username
+            email
+        }
+    }
+`;
+
+export const DELETE_POST = gql`
+    mutation removePost($postId: ID!) {
+        removePost(postId: $postId) {
+            username
+            email
         }
     }
 `;
