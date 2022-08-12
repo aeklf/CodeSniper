@@ -26,6 +26,11 @@ const LoginForm = () => {
     }catch (err) {
       console.error(err);
     }
+
+    setUserFormData({
+      email: '',
+      password: '',
+    });
   }
 
   return (
