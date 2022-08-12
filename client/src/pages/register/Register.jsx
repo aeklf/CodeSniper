@@ -11,9 +11,7 @@ const SignupForm = () => {
 
   const handleInputChange = (event) => {
     const {name, value} = event.target;
-    console.log(`name: ${name} value: ${value}`);
     setUserFormData({...userFormData, [name]:value});
-    console.log(`username: ${userFormData.username} email: ${userFormData.email} password: ${userFormData.password}`)
   };
 
   const handleFormSubmit = async (event) => {
@@ -21,9 +19,14 @@ const SignupForm = () => {
     event.preventDefault();
     event.stopPropagation();
 
-    const form = event.currentTarget;
-    console.log(form);
-
+    try {
+      const {data} = await addProfile({
+        variables: userFormData
+      });
+      Auth.login(data.addProfile.token);
+    }catch (err) {
+      console.error(err);
+    }
   }
 
   return (
@@ -39,8 +42,8 @@ const SignupForm = () => {
             <div className="loginBox">
               <form>
                 <input type='text' name="username" placeholder="Username" className="loginInput" onChange={handleInputChange} value={userFormData.username}/>
-                <input type='text' name="email" placeholder="Email" className="loginInput"/>
-                <input type='password' name="password" placeholder="Password" className="loginInput"/>
+                <input type='text' name="email" placeholder="Email" className="loginInput" onChange={handleInputChange} value={userFormData.email}/>
+                <input type='password' name="password" placeholder="Password" className="loginInput" onChange={handleInputChange} value={userFormData.password}/>
                 <button type='submit' className="loginButton" onClick={handleFormSubmit}>Sign Up</button>
                 <button className="loginRegisterButton">
                   Log into Account
