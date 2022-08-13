@@ -1,15 +1,12 @@
 /* MAIN STYLESHEET */
 
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Poppins:wght@300&display=swap');
 
 * {
-  font-family: "Abril Fatface", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: linear-gradient(to right, #b3bde6, #48418c, #2e0a67);
-  background-size: 400% 400%;
-  animation: Gradient 15s ease infinite;
 }
 
 .App {
@@ -29,19 +26,18 @@
 }
 
 .App-header {
-  background-color: #b3bde6;
+  background: none;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #2e0a67;
 }
 
-.App-link {
+/*.App-link {
   color: #48418c;
-} 
+} */
 
 @keyframes App-logo-spin {
   from {
