@@ -10,7 +10,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 //Components 
 import Topbar from "./components/topbar/Topbar";
-import LogInSignUp from "./components/logInSignUp/LogInSignUp";
 
 //Pages
 import "./App.css";
@@ -27,7 +26,7 @@ import Write from "./pages/write/Write";
 import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -54,35 +53,48 @@ function App() {
   const currentUser = true;
   return (
     <ApolloProvider client = { client }>
-     <Router>
+      <Router>
+        {/* Components */}
+        <Topbar />
 
-      {/* Components */}
-      {/* <Topbar /> */}
+        <Routes>
+          <Route
+            path='/'
+            element={<Homepage />}
+          />
+          <Route
+            path='/login'
+            element={<Login />}
+          />
+          <Route
+            path='/signup'
+            element={<Register />}
+          />
+        </Routes>
 
-      <Register />
-      {/* <Login /> */}
+         {/*<Login />*/}
+         {/*<Register />*/}
 
-      {/* <Switch>
-        <Route exact path="/">
-          <Homepage />
-        </Route>
-        <Route path="/posts">
-          <Homepage />
-        </Route>
-        <Route path="/register">
-          {currentUser ? <Homepage /> : <Register />}
-        </Route>
-        <Route path="/login">{currentUser ? <Homepage /> : <Login />}</Route>
-        <Route path="/post/:id">
-          <Single />
-        </Route>
-        <Route path="/write">{currentUser ? <Write /> : <Login />}</Route>
-        <Route path="/settings">
-          {currentUser ? <Settings /> : <Login />}
-        </Route>
-      </Switch> */}
-
-     </Router>
+        {/*{ <Switch>*/}
+        {/*  <Route exact path="/">*/}
+        {/*    <Homepage />*/}
+        {/*  </Route>*/}
+        {/*  <Route path="/posts">*/}
+        {/*    <Homepage />*/}
+        {/*  </Route>*/}
+        {/*  <Route path="/register">*/}
+        {/*    {currentUser ? <Homepage /> : <Register />}*/}
+        {/*  </Route>*/}
+        {/*  <Route path="/login">{currentUser ? <Homepage /> : <Login />}</Route>*/}
+        {/*  <Route path="/post/:id">*/}
+        {/*    <Single />*/}
+        {/*  </Route>*/}
+        {/*  <Route path="/write">{currentUser ? <Write /> : <Login />}</Route>*/}
+        {/*  <Route path="/settings">*/}
+        {/*    {currentUser ? <Settings /> : <Login />}*/}
+        {/*  </Route>*/}
+        {/*</Switch> }*/}
+      </Router>
     </ApolloProvider>
   );
 }
