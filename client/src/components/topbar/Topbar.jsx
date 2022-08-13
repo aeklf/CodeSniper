@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { FaPlusCircle } from "react-icons/fa";
 import "./topbar.css";
 import Auth from "../../utils/auth";
 
