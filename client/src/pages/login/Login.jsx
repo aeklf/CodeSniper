@@ -24,13 +24,18 @@ const LoginForm = () => {
       });
       Auth.login(data.login.token);
     }catch (err) {
-      console.error(err);
+      console.error(err.message);
     }
 
     setUserFormData({
       email: '',
       password: '',
     });
+  }
+
+  const createAccountClick = (event) => {
+    event.preventDefault();
+    window.location.assign('/signup');
   }
 
   return (
@@ -49,7 +54,7 @@ const LoginForm = () => {
                 <input type="password" name="password" placeholder="Password" className="loginInput" onChange={handleInputChange} value={userFormData.password}/>
                 <button type="submit" className="loginButton" onClick={handleFormSubmit}>Log In</button>
                 <span className="loginForgot">Forgot Password?</span>
-                <button className="loginRegisterButton">
+                <button className="loginRegisterButton" onClick={createAccountClick}>
                   Create a New Account
                 </button>
               </form>
