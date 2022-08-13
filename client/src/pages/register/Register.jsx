@@ -50,9 +50,6 @@ const SignupForm = () => {
                 <input type='text' name="email" placeholder="Email" className="loginInput" onChange={handleInputChange} value={userFormData.email}/>
                 <input type='password' name="password" placeholder="Password" className="loginInput" onChange={handleInputChange} value={userFormData.password}/>
                 <button type='submit' className="loginButton" onClick={handleFormSubmit}>Sign Up</button>
-                <button className="loginRegisterButton">
-                  Log into Account
-                </button>
               </form>
             </div>
           </div>
