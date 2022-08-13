@@ -72,8 +72,8 @@ function App() {
           />
         </Routes>
 
-         {/*<Login />*/}
-         {/*<Register />*/}
+        {/*<Login />*/}
+        {/*<Register />*/}
 
         {/*{ <Switch>*/}
         {/*  <Route exact path="/">*/}
