@@ -21,16 +21,20 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    text-align: right;
   }
 
   .headerTitleLg {
     background: none;
     color: rgb(9, 157, 231);
     font-weight: 600;
-    padding: 250px 50% 75px 0;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    margin-top: -25vh;
+    padding-right: 30vw;
+    padding-bottom: 50px;
+    padding-left: 60vw;
     font-size: 4vw;
-    align-content:center;
     line-height: 1;
     font-family: "Poppins", sans-serif;
 }
