@@ -39,4 +39,31 @@
     font-family: "Poppins", sans-serif;
 }
 
+@media screen and (max-width: 600px) {
+  .headerImg {
+    width: 100%;
+    height: 30vh;
+    margin-top: -59px;
+    object-fit: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .headerTitleLg {
+    background: none;
+    color: rgb(9, 157, 231);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    margin-top: -18vh;
+    padding-right: 15vw;
+    padding-bottom: 15vh;
+    padding-left: 40vw;
+    font-size: 9vw;
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+}
+}
 
