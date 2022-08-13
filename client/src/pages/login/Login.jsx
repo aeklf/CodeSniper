@@ -3,8 +3,12 @@ import React, {useState} from "react";
 import {LOGIN_USER} from '../../utils/mutations';
 import { useMutation } from "@apollo/client";
 import Auth from '../../utils/auth';
+import {Alert} from 'react-bootstrap';
+
 
 const LoginForm = () => {
+
+  const [showAlert, setShowAlert] = useState(false);
 
   const [userFormData, setUserFormData] = useState({email: '', password: '' });
   const [login, {error}] = useMutation(LOGIN_USER);
@@ -25,6 +29,7 @@ const LoginForm = () => {
       Auth.login(data.login.token);
     }catch (err) {
       console.error(err.message);
+      setShowAlert(true);
     }
 
     setUserFormData({
@@ -50,10 +55,13 @@ const LoginForm = () => {
           <div className="loginRight">
             <div className="loginBox">
               <form>
+              <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
+                Something went wrong with your login credentials!
+              </Alert>
                 <input type="text" name="email" placeholder="Email" className="loginInput" onChange={handleInputChange} value={userFormData.email}/>
                 <input type="password" name="password" placeholder="Password" className="loginInput" onChange={handleInputChange} value={userFormData.password}/>
                 <button type="submit" className="loginButton" onClick={handleFormSubmit}>Log In</button>
-                <span className="loginForgot">Forgot Password?</span>
+                {/* <span className="loginForgot">Forgot Password?</span> */}
                 <button className="loginRegisterButton" onClick={createAccountClick}>
                   Create a New Account
                 </button>
