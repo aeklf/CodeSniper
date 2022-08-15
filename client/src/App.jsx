@@ -55,7 +55,7 @@ function App() {
     <ApolloProvider client = { client }>
       <Router>
         {/* Components */}
-        <Topbar />
+        {/* <Topbar /> */}
 
         <Routes>
           <Route
@@ -70,10 +70,15 @@ function App() {
             path='/signup'
             element={<Register />}
           />
+          <Route
+            path='/write'
+            element={<Write />}
+          />
         </Routes>
+        
 
-         {/*<Login />*/}
-         {/*<Register />*/}
+        {/*<Login />*/}
+        {/*<Register />*/}
 
         {/*{ <Switch>*/}
         {/*  <Route exact path="/">*/}
