@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import "./topbar.css";
+import Auth from "../../utils/auth";
 
 export default function Topbar() {
-    const user = true;
+    const user = Auth.loggedIn();
     return (
         <div className="top">
             <div className="topLeft">
@@ -21,19 +22,7 @@ export default function Topbar() {
                         </Link>
                     </li>
 
-                    <li className="topListItem">ABOUT</li>
-                    <li className="topListItem">CONTACT</li>
-
-                    <li className="topListItem">
-                        {/* Navigates you to the WRITE page */}
-                        <Link className="link" to="/write">
-                            WRITE
-                        </Link>
-                    </li>
-
                     {user && <li className="topListItem">LOGOUT</li>}
-
-
                 </ul>
             </div>
             <div><input className="searchBar" type="text" placeholder="Search here"/>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
 
 *{
   font-family: "Poppins", sans-serif;
@@ -108,4 +108,38 @@
   cursor: pointer;
   background: white;
   font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 980px) {
+  .top,
+  .topLeft,
+  .topRight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .topIcon {
+    background: none;
+  }
+
+  .topListItem,
+  .link {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .searchBar {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: -2vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 5px;
+  }
 }
