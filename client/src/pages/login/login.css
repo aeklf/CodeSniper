@@ -1,14 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
 
 * {
-  font-family: "Abril Fatface", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: linear-gradient(to right, #b3bde6, #48418c, #2e0a67);
+  background: white;
   background-size: 400% 400%;
-  animation: Gradient 15s ease infinite;
 }
 
 .login {
