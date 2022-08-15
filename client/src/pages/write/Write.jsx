@@ -34,6 +34,13 @@ export default function Write() {
               <Form.Control type="email" placeholder="...type the code" />
             </Form.Group>
           </Col>
+          
+          <Col id="TextBox" md={{ span: 6, offset: 3 }}>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Topic: </Form.Label>
+              <Form.Control type="topic" placeholder="... web development" />
+            </Form.Group>
+          </Col>
 
           <Col md={{ span: 6, offset: 3 }}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
