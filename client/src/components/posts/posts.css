@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Poppins:wght@300&display=swap');
+
+  
+
 .posts{
     flex: 9;
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    margin-top: 80px;
+    justify-content: space-around;
+    background: white;
 }
-

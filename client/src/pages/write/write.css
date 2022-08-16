@@ -5,24 +5,30 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: linear-gradient(to right, #b3bde6, #48418c, #2e0a67);
+  background:#ffffff;
   background-size: 400% 400%;
-  animation: Gradient 15s ease infinite;
+  /* animation: Gradient 15s ease infinite; */
 }
 
-.write {
+/* .write {
   padding-top: 50px;
+} */
+
+.image {
+  margin: auto;
+  width: 50%;
+  height: 25%;
+  border-radius: 20px;
+  /* border: 3px solid #73AD21; */
+  /* padding: 25px; */
 }
 
-.writeImg {
-  margin-left: 150px;
-  width: 70vw;
-  height: 250px;
-  border-radius: 10px;
-  object-fit: cover;
+TextBox{
+  border-radius: 20px;
+  background: none;
 }
 
-.writeForm {
+/* .writeForm {
   position: relative;
 }
 
@@ -53,7 +59,7 @@
 }
 
 .writeInput::placeholder {
-  color: rgb(189, 185, 185);
+  color: rgb(0, 0, 0);
   font-weight: 400;
 }
 
@@ -81,4 +87,4 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-}
+} */

@@ -5,15 +5,15 @@ import Posts from "../../components/posts/Posts";
 import "./homepage.css";
 
 export default function Homepage() {
-  const location = useLocation();
-  console.log(location);
-  return (
-    <>
-      <Header />
-      <div className="home">
-        <Posts />
-        {/* <Sidebar /> */}
-      </div>
-    </>
-  );
+    const location = useLocation();
+    console.log(location);
+    return (
+        <>
+            <Header />
+            <div className="home">
+                <Posts />
+                {/* <Sidebar /> */}
+            </div>
+        </>
+    );
 }

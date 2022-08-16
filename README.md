@@ -88,6 +88,7 @@
 
 # 08-08
 
+<<<<<<< HEAD
 - Front:
 
   - Set theme for app -- Andrea
@@ -103,3 +104,22 @@
   - Create post database
     - Routes for user CRUD
     - Routes for post CRUD
+=======
+* Front:
+  * Set theme for app
+  * Landing/Login page (Buttons for log in or sign up) today -- Mario 
+  * Sign up page (Username, email, password) wednesday -- Mario
+  * General feed (Search bar: Search by username or topic) {All posts reverse chronological} Sat -- Alexis
+  * Write page -- Caro
+  * Profile page (Profile pic, bio, your posts) Monday -- Andrea
+    * Settings page 
+
+* Back:
+  * Create user database
+  * Create post database
+    * Routes for user CRUD
+    * Routes for post CRUD
+
+
+For connecting back end with the front end, review unit 21/22. Create apollo provider for the requests. 
+>>>>>>> b9fcd514186b57f68945215dbb63c5afe2f06e3c

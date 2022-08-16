@@ -45,17 +45,17 @@ const resolvers = {
       const token = signToken(user);
       return {token, user};
     },
-    addPost: async (parent, args, context, {post}) => {
+    addPost: async (parent, args, context, {postData}) => {
       const updatedUser = await Profile.findOneAndUpdate(
           {_id: context.user._id},
-          {$addToSet: {userPosts: post}},
+          {$addToSet: {userPosts: args}},
           {new: true}
       );
       return updatedUser;
     },
     removePost: async (parent, args, context) => {
       const updatedUser = await Profile.findOneAndUpdate(
-          {_id: context.user-_id},
+          {_id: context.user._id},
           {$pull: {usePosts: {_id: args.postId}}},
           {new: true}
       );

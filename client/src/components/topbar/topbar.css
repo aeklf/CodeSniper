@@ -1,51 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
+}
+
 .top {
   width: 100%;
-  height: 50px;
-  background-color: white;
+  height: 100px;
+  background: white;
   position: sticky;
   top: 0;
   display: flex;
-  align-items: center;
+  align-items: top;
+  padding: 30px;
   z-index: 999;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: sans-serif;
+  background: white;
 }
 
-.topLeft,
+.topLeft{
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
 .topRight {
   flex: 3;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: white;
+  list-style: none;
 }
 
 .topIcon {
-  font-size: 20px;
-  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  font-size: 25px;
   color: #444;
   cursor: pointer;
+  background: white;
+  margin-right: 5px;
+  padding: 0%;
+
 }
 
 .topCenter {
   flex: 6;
+  background: white;
 }
 
 .topList {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin: 0;
   padding: 0;
   list-style: none;
+  align-items: left;
+  background: white;
 }
 
 .topListItem {
   margin-right: 20px;
-  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
   font-weight: 300;
   cursor: pointer;
+  background: white;
 }
 
 .topListItem:hover{
-    color: gray;
+  color: gray;
+  text-decoration: underline;
+}
+
+.searchBar {
+  background: rgb(146, 183, 192);
+  color: rgb(45, 44, 43);
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  border: 10px;
+  justify-content: center;
+  margin-top: -1vh;
+  padding: 10px 10px 10px 100px;
+
 }
 
 .topImg {
@@ -57,8 +99,49 @@
   cursor: pointer;
 }
 
-.topSearchIcon {
-  font-size: 18px;
-  color: #666;
+.addPostIcon {
+  font-size: 25px;
+  color: rgb(102, 102, 102);
   cursor: pointer;
+  background: white;
+}
+
+.link {
+  margin-right: 20px;
+  font-size: 25px;
+  font-weight: 300;
+  cursor: pointer;
+  background: white;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 980px) {
+  .top,
+  .topLeft,
+  .topRight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .topIcon {
+    background: none;
+  }
+
+  .topListItem,
+  .link {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .searchBar {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: -2vh;
+    padding: 5px 5px 5px 50px;
+  }
 }
