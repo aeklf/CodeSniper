@@ -47,7 +47,7 @@ export default function Topbar() {
                         </li>
                         <li className="topListItem">
 
-                            <Link className="link" to="/register">
+                            <Link className="link" to="/signup">
                                 REGISTER
                             </Link>
 
