@@ -1,9 +1,6 @@
 import "./write.css";
 import React, {useState} from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
+import {Container, Row, Col, Form} from 'react-bootstrap';
 import { useMutation } from "@apollo/client";
 import { WRITE_POST } from '../../utils/mutations';
 import Auth from "../../utils/auth";
