@@ -6,11 +6,12 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import { useMutation } from "@apollo/client";
 import { WRITE_POST } from '../../utils/mutations';
+import Auth from "../../utils/auth";
 
 const WritePost = () => {
 
   const [postData, setPostData] = useState({ title:'', topic:'', content:''})
-  const [createPost, {error}] = useMutation(WRITE_POST);
+  const [addPost, {error}] = useMutation(WRITE_POST);
 
   const handleInputChange = (event) => {
     const {name, value} = event.target;
@@ -21,9 +22,11 @@ const WritePost = () => {
     event.preventDefault();
     event.stopPropagation();
 
+    const token = Auth.loggedIn() ? Auth.getToken() : null;
+
     try {
-      const {data} = await createPost({
-        variables: postData
+      const {data} = await addPost({
+        variables: {title: postData.title, topic:postData.topic, content:postData.content}
       });
     }catch (err) {
       console.log(err)
