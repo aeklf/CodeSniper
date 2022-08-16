@@ -1,7 +1,7 @@
 import "./settings.css";
 import Sidebar from "../../components/sidebar/Sidebar";
 
-export default function Settings() {
+const Settings = () => {
   return (
     <div className="settings">
       <div className="settingsWrapper">
@@ -13,17 +13,17 @@ export default function Settings() {
           <label>Profile Picture</label>
           <div className="settingsPP">
             <img
-              src="./assets/userimg.png"
-              alt=""
+                src="./assets/userimg.png"
+                alt=""
             />
             <label htmlFor="fileInput">
               <i className="settingsPPIcon far fa-user-circle"></i>{" "}
             </label>
             <input
-              id="fileInput"
-              type="file"
-              style={{ display: "none" }}
-              className="settingsPPInput"
+                id="fileInput"
+                type="file"
+                style={{ display: "none" }}
+                className="settingsPPInput"
             />
           </div>
           <label>Username</label>
@@ -41,3 +41,5 @@ export default function Settings() {
     </div>
   );
 }
+
+export default  Settings;

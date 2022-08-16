@@ -74,6 +74,10 @@ function App() {
             path='/write'
             element={<Write />}
           />
+          <Route
+            path='/profile'
+            element={<Settings />}
+          />
         </Routes>
         
 
