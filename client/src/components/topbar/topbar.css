@@ -18,13 +18,21 @@
   background: white;
 }
 
-.topLeft,
+.topLeft{
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
 .topRight {
   flex: 3;
   display: flex;
   align-items: center;
   justify-content: center;
   background: white;
+  list-style: none;
 }
 
 .topIcon {
@@ -78,10 +86,7 @@
   border: 10px;
   justify-content: center;
   margin-top: -1vh;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 100px;
-  padding-right: 10px;
+  padding: 10px 10px 10px 100px;
 
 }
 
@@ -94,7 +99,7 @@
   cursor: pointer;
 }
 
-.topSearchIcon {
+.addPostIcon {
   font-size: 25px;
   color: rgb(102, 102, 102);
   cursor: pointer;
@@ -137,9 +142,6 @@
     font-size: 20px;
     font-weight: 300;
     margin-top: -2vh;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 50px;
-    padding-right: 5px;
+    padding: 5px 5px 5px 50px;
   }
 }

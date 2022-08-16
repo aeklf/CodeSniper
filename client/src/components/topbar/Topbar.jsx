@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "./topbar.css";
 import Auth from "../../utils/auth";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faSquarePlus } from '@fortawesome/free-solid-svg-icons'
 
 export default function Topbar() {
     const user = Auth.loggedIn();
@@ -22,20 +24,35 @@ export default function Topbar() {
                         </Link>
                     </li>
 
-                    {user && <li className="topListItem">LOGOUT</li>}
+                    {user &&
+                        <li className="topListItem" onClick={Auth.logout}>
+                            LOGOUT
+                        </li>
+                    }
                 </ul>
             </div>
             <div><input className="searchBar" type="text" placeholder="Search here"/>
             </div>
             <div className="topRight">
                 {user ? (
-                    <Link className="link" to="/settings">
-                        <img
-                            className="topImg"
-                            src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                            alt=""
-                        />
-                    </Link>
+                    <ul className="topList">
+                        <li className="topListItem">
+                            <Link className="link" to="/settings">
+                                <img
+                                    className="topImg"
+                                    src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                                    alt=""
+                                />
+                            </Link>
+                        </li>
+                        <li className="topListItem">
+                            <Link className="link" to="/write">
+                                <FontAwesomeIcon icon={faSquarePlus} />
+                                {/*<i className="addPostIcon fas fa-search"></i>*/}
+                            </Link>
+                        </li>
+                    </ul>
+
                 ) : (
                     <ul className="topList">
                         <li className="topListItem">
@@ -54,8 +71,6 @@ export default function Topbar() {
                         </li>
                     </ul>
                 )}
-
-                <i className="topSearchIcon fas fa-search"></i>
 
             </div>
         </div>
