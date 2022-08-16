@@ -60,11 +60,13 @@ const LoginForm = () => {
               </Alert>
                 <input type="text" name="email" placeholder="Email" className="loginInput" onChange={handleInputChange} value={userFormData.email}/>
                 <input type="password" name="password" placeholder="Password" className="loginInput" onChange={handleInputChange} value={userFormData.password}/>
-                <button type="submit" className="loginButton" onClick={handleFormSubmit}>Log In</button>
+                <div>
+                <button type="submit" className="loginButton" onClick={handleFormSubmit}>Welcome back! (Login)</button>
                 {/* <span className="loginForgot">Forgot Password?</span> */}
                 <button className="loginRegisterButton" onClick={createAccountClick}>
-                  Create a New Account
+                  First-timer? Create a New Account ☺
                 </button>
+                </div> 
               </form>
             </div>
           </div>
