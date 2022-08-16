@@ -3,10 +3,15 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import {Col, Container, Image, Row, Card, Spinner} from "react-bootstrap";
 import {GET_ME} from '../../utils/queries';
 import {useQuery} from "@apollo/client";
+import Auth from "../../utils/auth";
 
 const Settings = () => {
-    const {loading, data} = useQuery(GET_ME);
+    const {loading, data, error} = useQuery(GET_ME);
     let userData;
+
+    if (!Auth.loggedIn()) {
+        window.location.assign("/login");
+    }
 
     if (!loading) {
         userData = data.me;
@@ -24,13 +29,14 @@ const Settings = () => {
             </Container>
         );
     }
+
     return (
         <Container fluid>
             <Row>
                 <Col className="text-center" md={{span: 3}}>
                     <Image className="profile-picture" src={process.env.PUBLIC_URL + '/profilePicture.jpeg'} thumbnail roundedCircle/>
-                    <h1>Username</h1>
-                    <h1>Email</h1>
+                    <h1>{`${userData.username}`}</h1>
+                    <h1>{`${userData.email}`}</h1>
                 </Col>
                 <Col md={{ span: 7, offset: 1 }}>
                     <Card className="text-center">
