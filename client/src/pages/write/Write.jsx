@@ -47,16 +47,10 @@ const WritePost = () => {
       </Row>
 
       <Row>
-      {/* <Col md={{ span: 6, offset: 3 }}>
-        
-
-      </Col> */}
-
-        <br>
-        </br>
+        <br></br>
       </Row>
 
-      {/* <Row> */}
+      
         <Form>
           <Col id="TextBox" md={{ span: 6, offset: 3 }}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -81,9 +75,7 @@ const WritePost = () => {
           <button type='submit' className="submitButton" onClick={handleFormSubmit}>Post</button>
         </Form> 
 
-      <Row>
-
-      </Row>
+      <Row></Row>
     
     </Container>
   );
