@@ -1,9 +1,29 @@
 import "./settings.css";
 import Sidebar from "../../components/sidebar/Sidebar";
-import {Col, Container, Image, Row, Card} from "react-bootstrap";
+import {Col, Container, Image, Row, Card, Spinner} from "react-bootstrap";
+import {GET_ME} from '../../utils/queries';
+import {useQuery} from "@apollo/client";
 
 const Settings = () => {
-    console.log(process.env.REACT_APP_PUBLIC_URL)
+    const {loading, data} = useQuery(GET_ME);
+    let userData;
+
+    if (!loading) {
+        userData = data.me;
+    }
+    else {
+        return (
+            <Container className="loading-spinner">
+                <Row>
+                    <Col className="text-center mt-5">
+                        <Spinner animation="grow"/>
+                        <Spinner animation="grow"/>
+                        <Spinner animation="grow"/>
+                    </Col>
+                </Row>
+            </Container>
+        );
+    }
     return (
         <Container fluid>
             <Row>
