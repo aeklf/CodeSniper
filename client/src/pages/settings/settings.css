@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap");
 * {
   font-family: "Poppins", sans-serif;
+  color: aliceblue;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: white;
+  background: #b3bde6;
   background-size: 400% 400%;
-  animation: Gradient 15s ease infinite;
 }
 
 .settings {
@@ -27,11 +27,11 @@
 .settingsTitleUpdate {
   font-size: 30px;
   margin-bottom: 20px;
-  color: lightcoral;
+  color: #48418c;
 }
 
 .settingsTitleDelete {
-  color: red;
+  color: #2e0a67;
   font-size: 12px;
   cursor: pointer;
 }
@@ -66,7 +66,7 @@
   border-radius: 50%;
   margin-left: 10px;
   color: white;
-  background-color: lightcoral;
+  background-color: #2e0a67;
   cursor: pointer;
 }
 
