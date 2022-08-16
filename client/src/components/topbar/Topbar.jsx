@@ -4,7 +4,7 @@ import Auth from "../../utils/auth";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faSquarePlus } from '@fortawesome/free-solid-svg-icons'
 
-export default function Topbar() {
+const Topbar = () => {
     const user = Auth.loggedIn();
     return (
         <div className="top">
@@ -37,7 +37,7 @@ export default function Topbar() {
                 {user ? (
                     <ul className="topList">
                         <li className="topListItem">
-                            <Link className="link" to="/settings">
+                            <Link className="link" to="/profile">
                                 <img
                                     className="topImg"
                                     src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
@@ -48,7 +48,6 @@ export default function Topbar() {
                         <li className="topListItem">
                             <Link className="link" to="/write">
                                 <FontAwesomeIcon icon={faSquarePlus} />
-                                {/*<i className="addPostIcon fas fa-search"></i>*/}
                             </Link>
                         </li>
                     </ul>
@@ -76,3 +75,5 @@ export default function Topbar() {
         </div>
     );
 }
+
+export default Topbar;
