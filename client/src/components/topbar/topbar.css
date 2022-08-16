@@ -84,10 +84,10 @@
   font-size: 25px;
   font-family: "Poppins", sans-serif;
   border: 10px;
+  border-radius: 25px;
   justify-content: center;
   margin-top: -1vh;
   padding: 10px 10px 10px 100px;
-
 }
 
 .topImg {
