@@ -13,7 +13,7 @@ export default function Settings() {
           <label>Profile Picture</label>
           <div className="settingsPP">
             <img
-              src="./settings/assets/userimg.png"
+              src="./assets/userimg.png"
               alt=""
             />
             <label htmlFor="fileInput">
