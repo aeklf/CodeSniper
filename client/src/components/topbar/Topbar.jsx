@@ -40,7 +40,7 @@ const Topbar = () => {
                             <Link className="link" to="/profile">
                                 <img
                                     className="topImg"
-                                    src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                                    src={process.env.PUBLIC_URL + '/profilePicture.jpeg'}
                                     alt=""
                                 />
                             </Link>
