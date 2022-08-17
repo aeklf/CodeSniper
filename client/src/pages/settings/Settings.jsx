@@ -1,17 +1,18 @@
 import "./settings.css";
-import Sidebar from "../../components/sidebar/Sidebar";
-import {Col, Container, Image, Row, Card, Spinner} from "react-bootstrap";
+import {Col, Container, Image, Row, Card, Spinner, Button} from "react-bootstrap";
 import {GET_ME} from '../../utils/queries';
-import {useQuery} from "@apollo/client";
+import {DELETE_POST} from '../../utils/mutations';
+import {useQuery, useMutation} from "@apollo/client";
 import Auth from "../../utils/auth";
 
 const Settings = () => {
-    const {loading, data, error} = useQuery(GET_ME);
-    let userData;
-
     if (!Auth.loggedIn()) {
         window.location.assign("/login");
     }
+
+    // const [deletePost, {error}] = useMutation(DELETE_POST);
+    const {loading, data} = useQuery(GET_ME);
+    let userData;
 
     if (!loading) {
         userData = data.me;
@@ -30,25 +31,45 @@ const Settings = () => {
         );
     }
 
+    // const handleDeletePost = async (postId) => {
+    //     console.log(postId);
+    //     try {
+    //         const {data} = await deletePost({
+    //             variables: {postId: postId}
+    //         });
+    //         if (!data) {
+    //             throw new Error('Something went wrong!');
+    //         }
+    //     }catch (err) {
+    //         console.error(err);
+    //     }
+    // }
+
     return (
         <Container fluid>
             <Row>
-                <Col className="text-center" md={{span: 3}}>
+                <Col className="text-center ml-3" md={{span: 3}}>
                     <Image className="profile-picture" src={process.env.PUBLIC_URL + '/profilePicture.jpeg'} thumbnail roundedCircle/>
-                    <h1>{`${userData.username}`}</h1>
-                    <h1>{`${userData.email}`}</h1>
+                    <h3 className="text-center mt-2">{`${userData.username}`}</h3>
+                    <h3 className="text-center mt-2">{`${userData.email}`}</h3>
                 </Col>
                 <Col md={{ span: 7, offset: 1 }}>
-                    <Card className="text-center">
-                        <Card.Header>Featured</Card.Header>
-                        <Card.Body>
-                            <Card.Title>Special title treatment</Card.Title>
-                            <Card.Text>
-                                With supporting text below as a natural lead-in to additional content.
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Footer className="text-muted">2 days ago</Card.Footer>
-                    </Card>
+                    {userData.userPosts.map((post) => {
+                        return (
+                            <Card key={post._id} className="text-center mt-4">
+                                <Card.Header>{post.topic}</Card.Header>
+                                <Card.Body>
+                                    <Card.Title>{post.title}</Card.Title>
+                                    <Card.Text>
+                                        {post.content}
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer>
+                                    <Button variant="danger" disabled>Delete post</Button>
+                                </Card.Footer>
+                            </Card>
+                        )
+                    })}
                 </Col>
             </Row>
         </Container>
