@@ -56,9 +56,9 @@ const resolvers = {
     removePost: async (parent, args, context) => {
       const updatedUser = await Profile.findOneAndUpdate(
           {_id: context.user._id},
-          {$pull: {usePosts: {_id: args.postId}}},
+          {$pull: {userPosts: {_id: args.postId}}},
           {new: true}
-      );
+      )
       return updatedUser;
     }
   },
