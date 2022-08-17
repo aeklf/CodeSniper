@@ -10,7 +10,7 @@ const Settings = () => {
         window.location.assign("/login");
     }
 
-    // const [deletePost, {error}] = useMutation(DELETE_POST);
+    const [deletePost, {error}] = useMutation(DELETE_POST);
     const {loading, data} = useQuery(GET_ME);
     let userData;
 
@@ -31,19 +31,19 @@ const Settings = () => {
         );
     }
 
-    // const handleDeletePost = async (postId) => {
-    //     console.log(postId);
-    //     try {
-    //         const {data} = await deletePost({
-    //             variables: {postId: postId}
-    //         });
-    //         if (!data) {
-    //             throw new Error('Something went wrong!');
-    //         }
-    //     }catch (err) {
-    //         console.error(err);
-    //     }
-    // }
+    const handleDeletePost = async (postId) => {
+        console.log(postId);
+        try {
+            const {data} = await deletePost({
+                variables: {postId: postId}
+            });
+            if (!data) {
+                throw new Error('Something went wrong!');
+            }
+        }catch (err) {
+            console.error(err);
+        }
+    }
 
     return (
         <Container fluid>
@@ -65,7 +65,7 @@ const Settings = () => {
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer>
-                                    <Button variant="danger" disabled>Delete post</Button>
+                                    <Button variant="danger" onClick={() => handleDeletePost(post._id)}>Delete post</Button>
                                 </Card.Footer>
                             </Card>
                         )
