@@ -9,6 +9,7 @@
 
 # USER GUIDE:
 #### 
+https://raw.githubusercontent.com/aeklf/CodeSniper/main/assets/UserGuide_write.png
 
 # The Constribution Guidelines is:
 ## HOW TO RUN THE CODE:
