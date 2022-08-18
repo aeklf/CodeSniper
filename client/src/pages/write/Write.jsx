@@ -4,6 +4,8 @@ import {Container, Row, Col, Form} from 'react-bootstrap';
 import { useMutation } from "@apollo/client";
 import { WRITE_POST } from '../../utils/mutations';
 import Auth from "../../utils/auth";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
 
 const WritePost = () => {
 
@@ -72,7 +74,9 @@ const WritePost = () => {
               <Form.Control as="textarea" type='text' name="content" placeholder="console.log('Hello Mexico')" rows={3} onChange={handleInputChange} value={postData.content}/>            
             </Form.Group>
           </Col>
-          <button type='submit' className="submitButton" onClick={handleFormSubmit}>Post</button>
+          <button type='submit' className="submitButton" onClick={handleFormSubmit}>POST</button>
+          {/* <button type='submit' className="submitButton" onClick={handleFormSubmit}>Post</button> */}
+
         </Form> 
 
       <Row></Row>
