@@ -28,7 +28,7 @@ https://github.com/macosta2015
 
 ### <span style="color:violet">CREDITS:</span>
 
-**Daniel Olmedo:** [https://github.com/adrianstrozzi](https://github.com/adrianstrozzi)
+**Daniel Olmedo:** [https://github.com/DanOlmedo](https://github.com/DanOlmedo)
 
 **Mario Acosta:** [https://github.com/macosta2015](https://github.com/macosta2015)
 
