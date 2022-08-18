@@ -9,9 +9,10 @@
 
 # USER GUIDE:
 #### 
+
 <p align="center">
   <img 
-    width="1200"
+    width="800"
     height="800"
     src="https://raw.githubusercontent.com/aeklf/CodeSniper/main/assets/UserGuide_write.png"
   >
