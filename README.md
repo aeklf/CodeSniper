@@ -7,10 +7,10 @@
 # APP ACCESS:
 #### Deployed URL: 
 
-# USER GUIDE:
-#### 
+# USER GUIDE: 
+#### Fill the inputs and then add the information by posting it. 
 ![mainpage](./assets/UserGuide_write.png)
-![mainpage](./assets/UserGuide_write_sample.png)
+
 
 
 # The Constribution Guidelines is:
