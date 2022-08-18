@@ -5,16 +5,14 @@
 #### Weclome to Code Sniper, a user friendly social media app for all type of developers. In it you will be able ton share your code and follow your trends. Developed by frustrated students that wanted to share their code. Create a profile, follow other coders and share all your code snipets. 
 
 # APP ACCESS:
-#### npm i
+#### Deployed URL: 
 
 # USER GUIDE:
-#### Helps you create Readme files!
+#### 
 
 # The Constribution Guidelines is:
-#### Mario Acosta
-
-# The Test Instructions Guidelines is:
-#### Run npm i, then run node index.js
+## HOW TO RUN THE CODE:
+#### In case you open it from a code editor, open your terminal and run'npm run develop'
 
 # The License used is:
 #### MIT
