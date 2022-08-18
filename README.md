@@ -14,9 +14,6 @@
 ## HOW TO RUN THE CODE:
 #### In case you open it from a code editor, open your terminal and run'npm run develop'
 
-# The License used is:
-#### MIT
-
 # The Github Account is:
 #### macosta2015
 https://github.com/macosta2015
@@ -40,5 +37,6 @@ https://github.com/macosta2015
 
 
 ### <span style="color:violet">LICENSE:</span>
+#### MIT
 
-**© 2022 Cuitlahuac Maldonado, Alexis García, Daniel Olmedo, Carolina García & Mario Acosta**
+**© 2022 Cuitlahuac Maldonado, Alexis García, Daniel Olmedo, Carolina García, Mario Acosta**
