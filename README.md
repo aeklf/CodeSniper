@@ -36,8 +36,11 @@ https://github.com/macosta2015
 
 **Alexis García:** [https://github.com/lexosaur](https://github.com/lexosaur)
 
-**Javier Fernández:** [https://github.com/zhune6](https://github.com/zhune6)
+**Andrea Kalife:** [https://github.com/aeklf](https://github.com/aeklf)
+
+**Carolina García:** [https://github.com/CaroGTaboada](https://github.com/CaroGTaboada)
+
 
 ### <span style="color:violet">LICENSE:</span>
 
-**© 2022 Adrian Strozzi, Alexis García, Cuitlahuac Maldonado, Javier Fernández & Mario Mendoza**
+**© 2022 Cuitlahuac Maldonado, Alexis García, Daniel Olmedo, Carolina García & Mario Acosta**
