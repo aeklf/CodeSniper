@@ -28,9 +28,9 @@ https://github.com/macosta2015
 
 ### <span style="color:violet">CREDITS:</span>
 
-**Adrian Strozzi:** [https://github.com/adrianstrozzi](https://github.com/adrianstrozzi)
+**Daniel Olmedo:** [https://github.com/adrianstrozzi](https://github.com/adrianstrozzi)
 
-**Mario Mendoza:** [https://github.com/Mayo-MM](https://github.com/Mayo-MM)
+**Mario Acosta:** [https://github.com/macosta2015](https://github.com/macosta2015)
 
 **Cuitlahuac Maldonado:** [https://github.com/KuiiMaldonado](https://github.com/KuiiMaldonado)
 
