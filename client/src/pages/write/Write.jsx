@@ -1,6 +1,6 @@
 import "./write.css";
 import React, {useState} from "react";
-import {Container, Row, Col, Form} from 'react-bootstrap';
+import {Container, Row, Col, Form, Button} from 'react-bootstrap';
 import { useMutation } from "@apollo/client";
 import { WRITE_POST } from '../../utils/mutations';
 import Auth from "../../utils/auth";
@@ -46,37 +46,29 @@ const WritePost = () => {
         />
       </Row>
 
-      <Row>
-        <br></br>
-      </Row>
-
-      
-        <Form>
-          <Col id="TextBox" md={{ span: 6, offset: 3 }}>
+      <Row className="mt-4">
+        <Col id="TextBox" md={{ span: 6, offset: 3 }} className="text-center">
+          <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Title: </Form.Label>
               <Form.Control type='text' name="title" placeholder="...type the code" onChange={handleInputChange} value={postData.title}/>
             </Form.Group>
-          </Col>
-          
-          <Col id="TextBox" md={{ span: 6, offset: 3 }}>
+
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Topic: </Form.Label>
               <Form.Control type='text' name="topic" placeholder="... web development" onChange={handleInputChange} value={postData.topic}/>
             </Form.Group>
-          </Col>
 
-          <Col md={{ span: 6, offset: 3 }}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Type your code here: </Form.Label>
-              <Form.Control as="textarea" type='text' name="content" placeholder="console.log('Hello Mexico')" rows={3} onChange={handleInputChange} value={postData.content}/>            
+              <Form.Control as="textarea" type='text' name="content" placeholder="console.log('Hello Mexico')" rows={3} onChange={handleInputChange} value={postData.content}/>
             </Form.Group>
-          </Col>
-          <button type='submit' className="submitButton" onClick={handleFormSubmit}>Post</button>
-        </Form> 
+            {/*<button type='submit' className="submitButton" onClick={handleFormSubmit}>Post</button>*/}
+            <Button variant="primary" type='submit' size="lg" onClick={handleFormSubmit}>Post</Button>
+          </Form>
+        </Col>
+      </Row>
 
-      <Row></Row>
-    
     </Container>
   );
 }
