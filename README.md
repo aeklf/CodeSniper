@@ -10,6 +10,7 @@
 # USER GUIDE:
 #### 
 ![mainpage](./assets/UserGuide_write.png)
+![mainpage](./assets/UserGuide_write_sample.png)
 
 
 # The Constribution Guidelines is:
