@@ -1,7 +1,6 @@
-# CODE SNIPER
-<h2 align="center">
+<h1 align="center">
 CODE SNIPER 💻🚀
-</h2> 
+</h1> 
 
 # DESCRIPTION:
 #### Weclome to Code Sniper, a user friendly social media app for all type of developers. In it you will be able ton share your code and follow your trends. Developed by frustrated students that wanted to share their code. Create a profile, follow other coders and share all your code snipets. 
