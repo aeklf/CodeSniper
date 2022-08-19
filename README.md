@@ -15,9 +15,9 @@ Fill the inputs by adding your information and then post it.
 
 ![mainpage](./assets/UserGuide_write.png)
 
-<h3 align="center">
+<h4 align="center">
 You can see your posts by clicking on the bot icon.
-</h3> 
+</h4> 
 
 ![mainpage](./assets/UserGuide_write_posted.png)
 
@@ -28,6 +28,8 @@ You can see your posts by clicking on the bot icon.
  Open your terminal and run'npm run install'.
 <br />
 ![mainpage](./assets/npm_install.png)
+
+<br />
 
  Open your terminal and run'npm run start'.
 <br />
