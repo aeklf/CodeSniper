@@ -15,8 +15,8 @@
 
 # HOW TO RUN THE CODE:
 #### In case you open it from a code editor, open your terminal and run'npm run develop'
-![mainpage](./assets/npm install.png)
-
+![mainpage](./assets/npm_install.png)
+![mainpage](./assets/npm_start.png)
 
 # The Github Repository is:
 [https://github.com/macosta2015
