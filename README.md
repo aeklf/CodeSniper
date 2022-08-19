@@ -13,9 +13,10 @@
 
 
 
-# The Constribution Guidelines is:
-## HOW TO RUN THE CODE:
+# HOW TO RUN THE CODE:
 #### In case you open it from a code editor, open your terminal and run'npm run develop'
+![mainpage](./assets/npm install.png)
+
 
 # The Github Repository is:
 [https://github.com/macosta2015
