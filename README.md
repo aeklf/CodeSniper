@@ -16,11 +16,11 @@ CODE SNIPER 💻🚀
 
 # HOW TO RUN THE CODE:
 #### In case you open it from a code editor:
-# Open your terminal and run'npm run install'.
+ Open your terminal and run'npm run install'.
 <br />
 ![mainpage](./assets/npm_install.png)
 
-# Open your terminal and run'npm run start'.
+ Open your terminal and run'npm run start'.
 <br />
 ![mainpage](./assets/npm_start.png)
 
