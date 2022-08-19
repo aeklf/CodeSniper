@@ -17,10 +17,9 @@
 ## HOW TO RUN THE CODE:
 #### In case you open it from a code editor, open your terminal and run'npm run develop'
 
-# The Github Account is:
-#### macosta2015
-https://github.com/macosta2015
-
+# The Github Repository is:
+[https://github.com/macosta2015
+](https://github.com/aeklf/CodeSniper)
 # Please reach out to the following email:
 
 ### <span style="color:violet">CREDITS:</span>
