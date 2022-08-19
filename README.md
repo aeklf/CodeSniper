@@ -25,8 +25,8 @@ Open your terminal and run'npm run start'.
 ![mainpage](./assets/npm_start.png)
 
 # The Github Repository is:
-[https://github.com/macosta2015
-](https://github.com/aeklf/CodeSniper)
+https://github.com/aeklf/CodeSniper
+
 # Please reach out to the following email:
 
 ### <span style="color:violet">CREDITS:</span>
