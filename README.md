@@ -10,9 +10,16 @@ CODE SNIPER 💻🚀
 
 # USER GUIDE: 
 #### Fill the inputs by adding your information and then post it. 
+<h3 align="center">
+Fill the inputs by adding your information and then post it. 
+</h3> 
+
 ![mainpage](./assets/UserGuide_write.png)
 
 #### You can see your posts by clicking on the bot icon.
+<h3 align="center">
+You can see your posts by clicking on the bot icon.
+</h3> 
 
 ![mainpage](./assets/UserGuide_write_posted.png)
 
