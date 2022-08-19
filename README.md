@@ -15,9 +15,6 @@
 
 # HOW TO RUN THE CODE:
 #### In case you open it from a code editor:
-
-<!-- <a href="https://github.com/macosta2015?tab=repositories"><img align="left" src="https://raw.githubusercontent.com/macosta2015/macosta2015/main/images/instagram.svg" alt="Mario Acosta | Gitgub" width="21px"/></a> -->
-
 Open your terminal and run'npm run install'.
 <br />
 ![mainpage](./assets/npm_install.png)
@@ -28,6 +25,7 @@ Open your terminal and run'npm run start'.
 
 # The Github Repository is:
 https://github.com/aeklf/CodeSniper
+
 
 # Please reach out to the following email:
 
