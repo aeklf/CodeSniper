@@ -1,5 +1,6 @@
-# CODE SNIPER
-#### CodeSniper
+<h1 align="center">
+CODE SNIPER 💻🚀
+</h1> 
 
 # DESCRIPTION:
 #### Weclome to Code Sniper, a user friendly social media app for all type of developers. In it you will be able ton share your code and follow your trends. Developed by frustrated students that wanted to share their code. Create a profile, follow other coders and share all your code snipets. 
@@ -15,7 +16,6 @@
 
 # HOW TO RUN THE CODE:
 #### In case you open it from a code editor:
-
 Open your terminal and run'npm run install'.
 <br />
 ![mainpage](./assets/npm_install.png)
@@ -25,7 +25,9 @@ Open your terminal and run'npm run start'.
 ![mainpage](./assets/npm_start.png)
 
 # The Github Repository is:
+<a href="https://github.com/aeklf/CodeSniper"><img align="left" src="https://raw.githubusercontent.com/macosta2015/macosta2015/main/images/github.svg" alt="Mario Acosta | Gitgub" width="21px"/></a>
 https://github.com/aeklf/CodeSniper
+
 
 # Please reach out to the following email:
 
