@@ -5,7 +5,7 @@
 #### Weclome to Code Sniper, a user friendly social media app for all type of developers. In it you will be able ton share your code and follow your trends. Developed by frustrated students that wanted to share their code. Create a profile, follow other coders and share all your code snipets. 
 
 # APP ACCESS:
-#### Deployed URL: 
+#### Deployed URL: https://still-chamber-42871.herokuapp.com/
 
 # USER GUIDE: 
 #### Fill the inputs and then add the information by posting it. 
