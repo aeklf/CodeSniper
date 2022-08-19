@@ -22,7 +22,6 @@
 https://github.com/macosta2015
 
 # Please reach out to the following email:
-#### macosta2015@my.fit.edu
 
 ### <span style="color:violet">CREDITS:</span>
 
