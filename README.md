@@ -1,5 +1,6 @@
-# CODE SNIPER
-#### CodeSniper
+<h1 align="center">
+CODE SNIPER 💻🚀
+</h1> 
 
 # DESCRIPTION:
 #### Weclome to Code Sniper, a user friendly social media app for all type of developers. In it you will be able ton share your code and follow your trends. Developed by frustrated students that wanted to share their code. Create a profile, follow other coders and share all your code snipets. 
@@ -8,19 +9,37 @@
 #### Deployed URL: https://still-chamber-42871.herokuapp.com/
 
 # USER GUIDE: 
-#### Fill the inputs and then add the information by posting it. 
+<h4 align="center">
+Fill the inputs by adding your information and then post it. 
+</h4> 
+
 ![mainpage](./assets/UserGuide_write.png)
+
+<h4 align="center">
+You can see your posts by clicking on the bot icon.
+</h4> 
+
+![mainpage](./assets/UserGuide_write_posted.png)
 
 
 
 # HOW TO RUN THE CODE:
-#### In case you open it from a code editor, open your terminal and run'npm run develop'
-![mainpage](./assets/npm install.png)
+#### In case you open it from a code editor:
+ Open your terminal and run'npm run install'.
+<br />
+![mainpage](./assets/npm_install.png)
 
+<br />
+
+ Open your terminal and run'npm run start'.
+<br />
+![mainpage](./assets/npm_start.png)
 
 # The Github Repository is:
-[https://github.com/macosta2015
-](https://github.com/aeklf/CodeSniper)
+<a href="https://github.com/aeklf/CodeSniper"><img align="left" src="https://raw.githubusercontent.com/macosta2015/macosta2015/main/images/github.svg" alt="Mario Acosta | Gitgub" width="21px"/></a>
+https://github.com/aeklf/CodeSniper
+
+
 # Please reach out to the following email:
 
 ### <span style="color:violet">CREDITS:</span>
