@@ -13,7 +13,7 @@ CODE SNIPER 💻🚀
 Fill the inputs by adding your information and then post it. 
 </h4> 
 
-![mainpage](./assets/UserGuide_write.png)
+![mainpage](./assets/UserGuide_write_sample.png)
 
 <h4 align="center">
 You can see your posts by clicking on the bot icon.
