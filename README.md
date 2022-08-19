@@ -12,6 +12,8 @@ CODE SNIPER 💻🚀
 #### Fill the inputs by adding your information and then post it. 
 ![mainpage](./assets/UserGuide_write.png)
 
+#### You can see your posts by clicking on the bot icon.
+
 ![mainpage](./assets/UserGuide_write_posted.png)
 
 
