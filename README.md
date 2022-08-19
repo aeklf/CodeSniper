@@ -24,7 +24,7 @@ Open your terminal and run'npm run start'.
 ![mainpage](./assets/npm_start.png)
 
 # The Github Repository is:
-<!-- <a href="https://github.com/macosta2015?tab=repositories"><img align="left" src="https://raw.githubusercontent.com/macosta2015/macosta2015/main/images/instagram.svg" alt="Mario Acosta | Gitgub" width="21px"/></a> -->
+<a href="https://github.com/aeklf/CodeSniper"><img align="left" src="https://raw.githubusercontent.com/macosta2015/macosta2015/main/images/github.svg" alt="Mario Acosta | Gitgub" width="21px"/></a>
 https://github.com/aeklf/CodeSniper
 
 
