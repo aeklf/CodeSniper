@@ -14,8 +14,12 @@
 
 
 # HOW TO RUN THE CODE:
-#### In case you open it from a code editor, open your terminal and run'npm run develop'
+#### In case you open it from a code editor:
+
+Open your terminal and run'npm run install'.
 ![mainpage](./assets/npm_install.png)
+
+Open your terminal and run'npm run start'.
 ![mainpage](./assets/npm_start.png)
 
 # The Github Repository is:
