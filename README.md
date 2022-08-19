@@ -1,28 +1,46 @@
-# CODE SNIPER
-#### CodeSniper
+<h1 align="center">
+CODE SNIPER 💻🚀
+</h1> 
 
 # DESCRIPTION:
 #### Weclome to Code Sniper, a user friendly social media app for all type of developers. In it you will be able ton share your code and follow your trends. Developed by frustrated students that wanted to share their code. Create a profile, follow other coders and share all your code snipets. 
 
 # APP ACCESS:
-#### Deployed URL: 
+#### Deployed URL: https://still-chamber-42871.herokuapp.com/
 
 # USER GUIDE: 
-#### Fill the inputs and then add the information by posting it. 
-![mainpage](./assets/UserGuide_write.png)
+<h4 align="center">
+Fill the inputs by adding your information and then post it. 
+</h4> 
+
+![mainpage](./assets/UserGuide_write_sample.png)
+
+<h4 align="center">
+You can see your posts by clicking on the bot icon.
+</h4> 
+
+![mainpage](./assets/UserGuide_write_posted.png)
 
 
 
-# The Constribution Guidelines is:
-## HOW TO RUN THE CODE:
-#### In case you open it from a code editor, open your terminal and run'npm run develop'
+# HOW TO RUN THE CODE:
+#### In case you open it from a code editor:
+ Open your terminal and run'npm run install'.
+<br />
+![mainpage](./assets/npm_install.png)
 
-# The Github Account is:
-#### macosta2015
-https://github.com/macosta2015
+<br />
+
+ Open your terminal and run'npm run start'.
+<br />
+![mainpage](./assets/npm_start.png)
+
+# The Github Repository is:
+<a href="https://github.com/aeklf/CodeSniper"><img align="left" src="https://raw.githubusercontent.com/macosta2015/macosta2015/main/images/github.svg" alt="Mario Acosta | Gitgub" width="21px"/></a>
+https://github.com/aeklf/CodeSniper
+
 
 # Please reach out to the following email:
-#### macosta2015@my.fit.edu
 
 ### <span style="color:violet">CREDITS:</span>
 
