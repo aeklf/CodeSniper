@@ -15,7 +15,6 @@
 
 # HOW TO RUN THE CODE:
 #### In case you open it from a code editor, open your terminal and run'npm run develop'
-![mainpage](./assets/UserGuide_write.png)
 ![mainpage](./assets/npm install.png)
 
 
