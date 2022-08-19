@@ -9,8 +9,10 @@ CODE SNIPER 💻🚀
 #### Deployed URL: https://still-chamber-42871.herokuapp.com/
 
 # USER GUIDE: 
-#### Fill the inputs and then add the information by posting it. 
+#### Fill the inputs by adding your information and then post it. 
 ![mainpage](./assets/UserGuide_write.png)
+
+![mainpage](./assets/UserGuide_write_posted.png)
 
 
 
